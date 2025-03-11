@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Archive</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/gallery.css">
+    <link rel="stylesheet" type="text/css" href="css/lightbox.css">
+    <script src="js/script.js" defer></script>
+
+    <style>
+        body {
+            background-color: black;
+        }
+
+        @media (min-width: 768px) {
+            #gallery {
+                margin-top: 120px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+  <div class="overlay" id="overlay"></div>
+  <header>
+    <nav class="nav">
+      <div class="nav-left">
+        <h1 class="site-title">°˖✧♡／(^ × ^)＼ ✧˖° ♱</h1>
+      </div>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="index.html">About</a></li>
+          <li><a href="paintings.html">Gallery</a></li>
+          <li><a href="#"><span class="underlined">Archive</span></a></li>
+          <li><a href="https://soundcloud.com/u_ume" target="_blank">
+            <img src="img/sclogo.svg" alt="SoundCloud Logo" class="soundcloud-logo"></a></li>
+          <li><a href="https://twitter.com/paintingsbylol" target="_blank">
+            <img src="img/twitterlogo.svg" alt="Twitter Logo" class="twitter-logo"></a></li>
+        </ul>
+      </div>
+      <button class="nav-toggle">
+        <div class="toggle-bar"></div>
+        <div class="toggle-bar"></div>
+      </button>
+    </nav>
+  </header>
+
+  <div id="gallery">
+    <img src="img/archive/1.jpg" alt="rainbow">
+    <img src="img/archive/2.jpg" alt="seek">
+    <img src="img/archive/3.jpg" alt="muc central station">
+ </div>
+
+ <div id="lightbox-overlay" class="hidden">
+  <span id="close-button">&times;</span>
+  <div id="lightbox-content">
+      <img id="lightbox-image" src="" alt="">
+  </div>
+</div>
+
+        <script src="js/lightbox.js"></script>
+
+
+</body>
+</html>

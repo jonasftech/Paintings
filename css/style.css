@@ -1,0 +1,218 @@
+body {
+  font: 1.2em;
+  font-family: "Ã£Æ’â€™Ã£Æ’Â©Ã£â€šÂ®Ã£Æ’Å½Ã¨Â§â€™Ã£â€šÂ´ Pro W3", "Hiragino Kaku Gothic Pro", Osaka,
+    "Ã£Æ’Â¡Ã£â€šÂ¤Ã£Æ’ÂªÃ£â€šÂª", Meiryo, "MS PÃ£â€šÂ´Ã£â€šÂ·Ã£Æ’Æ’Ã£â€šÂ¯", "MS PGothic", farial, helvetica,
+    clean, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    cursor: url('/fun/MagicStick.ani'), auto;
+  }
+
+  a {
+    cursor: url('/fun/pasteldarkblue.cur'), pointer;
+}
+  
+header {
+  background-color: #000000;
+  padding: 10px 20px;
+  position:sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: top 0.3s;
+}
+
+.hidden {
+  display: none;
+}
+  
+  .site-title {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    margin: 0;
+    font-weight: normal;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 19.8px;
+    display: flex;
+    align-items: center;
+  }
+
+  .footer {
+    background-color: #000000ee;
+    color: white;
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 18px;
+}
+
+  .underlined {
+    text-decoration: underline;
+    text-underline-offset: 8px; /* Hier kannst du den Abstand einstellen */
+  }
+  
+  .social-link img,
+  .soundcloud-logo,
+  .twitter-logo {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+  
+  .nav-toggle {
+    display: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .toggle-bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+  }
+
+  .site-title.hidden {
+    display: none;
+  }
+
+  .footer.hidden {
+    display: none;
+  }
+
+  #gallery .gallery-hidden {
+    display: none;
+  }
+
+
+/* PC Exclusives */
+@media (min-width: 769px) {
+    .site-title {
+      font-size: 37.4px; /* Größere Schriftgröße nur für Desktop-Bildschirme */
+    }
+}  
+  
+/* Mobile Styles */
+@media (max-width: 768px) {
+
+    
+    .nav {
+        padding: 10px;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: black; /* Hier kannst du die Deckkraft der schwarzen Hintergrundfarbe einstellen */
+      z-index: 1000; /* Stelle sicher, dass das Overlay über anderen Inhalten liegt */
+      display: none; /* Startet unsichtbar */
+    }
+    
+    .overlay.show {
+      display: block; /* Zeige das Overlay, wenn die Klasse 'show' hinzugefügt wird */
+    }
+    
+
+  .nav-links {
+      display: none;
+  }
+
+  .nav-links a {
+    font-size: 28px;
+  }
+
+  .nav-links.show {
+      z-index: 1001;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #000;
+  }
+
+  .nav-toggle {
+    z-index: 1001;
+    display: block;
+  }
+  
+    .nav-right {
+      display: none;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+      background-color: #000;
+      text-align: center;
+    }
+  
+    .nav-right.show {
+      display: block;
+    }
+  
+    .nav-right ul {
+      padding: 0;
+    }
+  
+    .nav-right li {
+      margin: 10px 0;
+    }
+    .site-title {
+        text-align: right; /* Titel rechts ausrichten */
+    }
+
+    .site-title.black-text {
+      color: black; /* Ändere die Schriftfarbe auf Schwarz */
+    }
+    
+    .nav-toggle {
+        display: block;
+        text-align: right;
+    }
+
+    .no-scroll {
+  overflow: hidden;
+}
+  }
+
+  
+  .soundcloud-logo {
+    transform: scale(1.4); 
+  }
+  
+  .twitter-logo {
+    width: 24px; /* Ändere die Breite entsprechend deiner Bedürfnisse */
+    height: auto; /* Die Höhe wird automatisch angepasst, um das Bild nicht zu verzerren */
+  }
